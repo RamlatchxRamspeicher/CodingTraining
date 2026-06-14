@@ -50,6 +50,8 @@ class Graph{
         std::vector<Edge> getNeighbours(int id) const;
         std::vector<std::tuple<int, int, double>> getAllEdges() const;
         std::vector<std::vector<double>> getAdjMatrix()const;
+        void printAdjMatrix()const;
+        void printAdjList()const;
         V getVertex(int id)const;
         std::optional<std::pair<std::vector<int>, double>> BFS(const int& startId, const int& targetId) const;
         std::vector<Edge> BFSTraverse(const int& startId) const;

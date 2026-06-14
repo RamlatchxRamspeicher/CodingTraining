@@ -172,6 +172,40 @@ std::vector<std::vector<double>> Graph<V>::getAdjMatrix()const{
     }
     return  result;
 }
+#include <iomanip>
+template<typename V>
+void Graph<V>::printAdjMatrix()const{
+    std::vector<int> ids = _getIds();
+
+    std::cout << "    ";
+    for(auto& head: ids)
+        std::cout << "|   " << std::setw(3) << head << "   ";
+    std::cout << "|" << std::endl;
+
+    for(auto& y: ids){
+        std::cout << std::setw(3) << y << " ";
+        for(auto& x: ids){
+            auto e = findEdge(y, x);
+            std::cout << "| " << std::setw(5) << std::fixed << std::setprecision(1) 
+                      << (e ? e->weight : 0.0) << " ";
+        }
+        std::cout << "|" << std::endl;
+    }
+}
+template<typename V>
+void Graph<V>::printAdjList()const{
+    std::vector<int> ids = _getIds();
+
+    for(auto& node: ids){
+        std::cout << "[" << std::setw(3) << node << "] : [";
+        auto next = getNeighbours(node);
+        for(auto& e: next){
+            std::cout << " {" << std::setw(3) << e.to << ", " << std::setw(5) << std::fixed << std::setprecision(1) 
+                      << e.weight << "} ";
+        }
+        std::cout << "]" << std::endl;
+    }
+}
 template<typename V>
 V Graph<V>::getVertex(int id) const{
     return vertices.get(id)->value;
