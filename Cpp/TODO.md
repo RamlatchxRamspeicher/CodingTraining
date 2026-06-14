@@ -28,25 +28,18 @@
 - [ ] [2-3 Heap](https://en.wikipedia.org/wiki/2%E2%80%933_heap)
 - [ ] [d-ary Heap](https://en.wikipedia.org/wiki/D-ary_heap)?
 
-### HashTable
+### Matrizen
 
-- [x] Rule of Three
-- [x] Shrinking
-- [x] operator[]
-- [x] Bucket-Iterator
-- [x] Statistiken
-- [x] neue BucketTypen: SkipListBucket, SortedBucket
-
-### [Graphen](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
-
-- [ ] [Adjacency list](https://en.wikipedia.org/wiki/Adjacency_list)
-- [x] Matrix representation ([Adjacency matrix](https://en.wikipedia.org/wiki/Adjacency_matrix))
 - [ ] Matricies
-- [x] Ungerichteter Graph
-- [x] Gerichteter Graph
-- [x] Gewichteter Graph
-- [x] DAG
-- [x] Suchalgorithmen
+
+### Algorithmen
+
+#### Graphen
+- [ ] A*
+- [ ] Maze solver
+- [ ] Faerbung
+- [ ] Floyd-Warshall
+- [ ] Edmonds-Karp
 
 ### Kryptographie
 
@@ -55,11 +48,8 @@
 
 ### Game Turing Complete inspired C++ PC  (Project)
 
-- [x] Speicher
-- [x] Clock
-- [x] Bus
-- [x] Erstes program
 - [ ] Leg Architecture
+- [ ] 16bit Architecture
 
 ### Projekte
 
@@ -97,9 +87,11 @@
 
 ## ✅ Erledigt
 
-- [x] (Priority)Queue, Stack, (Doubly)LinkedList, SkipList
-- [x] BinarySearchTree, AVLTree, completeBinaryTree, Heap
-
+- [x] Linear:    (Priority)Queue, Stack, (Doubly)LinkedList, SkipList
+- [x] Trees:     BinarySearchTree, AVLTree, completeBinaryTree, Heap
+- [x] HashTable: Rule of Three, Shrinking, operator[], Bucket-Iterator, Stats, SkipListBucket, SortedBucket
+- [x] Graphen:   Adjacency list und Matrix representation, Ungerichteter Graph, Gerichteter Graph, Gewichteter Graph, DAG, Suchalgorithmen, Pfadalgorithmen
+- [x] VirtualPC: Overture -> Logik gatter, ALU, Storage, Clock, digital wires/ switches, Bus, Opcodes, erstes program fibonacci
 ---
 
 ## 📝 Notizen
