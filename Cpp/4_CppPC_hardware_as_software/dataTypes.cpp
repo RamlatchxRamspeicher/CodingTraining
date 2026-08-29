@@ -36,16 +36,16 @@ BYTE BYTE8(uint8_t i){
 uint8_t toUnsigned8(int8_t i){
     return (i>=0) ? i : i+128;
 }
-int8_t toSigned8(uint8_t i){
-    return sINT8(BYTE8(i));
-}
+
 uint8_t uINT8(BYTE bits){
     return (uint8_t)128*bits.b128+64*bits.b64+32*bits.b32+16*bits.b16+8*bits.b8+4*bits.b4+2*bits.b2+1*bits.b1;
 }
 int8_t sINT8(BYTE bits){
     return (int8_t)-128*bits.b128+64*bits.b64+32*bits.b32+16*bits.b16+8*bits.b8+4*bits.b4+2*bits.b2+1*bits.b1;
 }
-
+int8_t toSigned8(uint8_t i){
+    return sINT8(BYTE8(i));
+}
 SHORT SHORT16(uint16_t i){
     return SHORT{
         BYTE8((i >> 8)  & 0xFF),

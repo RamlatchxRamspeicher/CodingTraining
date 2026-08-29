@@ -53,9 +53,9 @@
 
 ### Projekte
 
-- [ ] IoT - Duties : tiny server with POST({duty, due date}), GET(timespan), UPDATE({duty, due date}) DELETE{duty} and client that always lists the next timespan and missed duties can create, check done, or update duties
+- [ ] constraint hardware - Duties : tiny server with POST({duty, due date}), GET(timespan), UPDATE({duty, due date}) DELETE{duty} and client that always lists the next timespan and missed duties can create, check done, or update duties
 - [ ] something like pandas but only basics... maybe No-SQL? with statistic functions and others
-- [ ] 
+- [ ] IoT - Temperature sensor array from different rooms maybe zigbee integration
 
 ---
 
